@@ -1,3 +1,3 @@
-# erebur.github.io
-
-<a href="releases/klatab.apk" download>Klatab Apk<a>
+# Erebur.net
+<a href="releases/klatab.apk" download>Cooler KlaTab<a>
+<a href="/klatab" download>Cooler KlaTab Web Version<a>
