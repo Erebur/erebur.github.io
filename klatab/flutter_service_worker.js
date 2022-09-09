@@ -15,15 +15,14 @@ const RESOURCES = {
 "canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
 "canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
 "canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
-"index.html": "24f518ff427e280fd2310bc8a499742a",
-"/": "24f518ff427e280fd2310bc8a499742a",
-"assets/NOTICES": "57974fd358601a915e979f2f471e8c0d",
+"index.html": "ab20f8b62c7a755c005695615237c3c8",
+"/": "ab20f8b62c7a755c005695615237c3c8",
+"assets/NOTICES": "cf6324b5b25d9b3688c713ca53188f43",
 "assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"assets/FontManifest.json": "7b2a36307916a9721811788013e65289",
 "assets/packages/fluttertoast/assets/toastify.js": "e7006a0a033d834ef9414d48db3be6fc",
 "assets/packages/fluttertoast/assets/toastify.css": "a85675050054f179444bc5ad70ffc635",
-"assets/AssetManifest.json": "222bc785bdb07236eb8746bafcb02592",
+"assets/AssetManifest.json": "a1f1c677b18c8bf3fc47168dec9ed7f2",
 "favicon.png": "5cccd6ef9132c6055bd215f95efc020b"
 };
 
