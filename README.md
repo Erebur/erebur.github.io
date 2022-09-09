@@ -4,4 +4,4 @@
 
 <a href="releases/klatab.apk" download>Cooler KlaTab Android Download<a>
 
-<a href="releases/klatab.zip" download>Cooler KlaTab Windows exe Download WIP<a>
+<a href="releases/klatab.zip" download>Cooler KlaTab Windows exe Download<a>
