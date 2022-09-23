@@ -1,0 +1,19 @@
+* {
+  margin: 2%;
+  color: #e3e3dc;
+  background-color: #1b1c18;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #99d85f;
+}
+
+a {
+  color: #becbae;
+}
+
+hr {
+  color: #44483e;
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,32 @@
+// green
+$primary: #99d85f;
+$secondary:#becbae;
+$teritary:#a0cfcd;
+$on_primary_container :#b4f578;
+$background:#1b1c18;
+$surface_variant:#44483e;
+$text:#e3e3dc;
+
+// purple
+// $primary: #e9b3ff;
+// $secondary:#d4c0d8;
+// $on_primary_container :#6e1a95;
+// $background:#1e1b1e;
+// $surface_variant:#4c444d;
+// $text:#e8e0e5;
+* {
+    margin: 2%;
+    color: $text;
+    background-color: $background;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: $primary;    
+}
+
+a {
+    color: $secondary;
+}
+hr {
+    color: $surface_variant ;
+}
