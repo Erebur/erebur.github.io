@@ -1,12 +1,38 @@
-// green
-$primary: #99d85f;
-$secondary: #becbae;
-$teritary: #a0cfcd;
-$on_primary_container : #b4f578;
-$background: #1b1c18;
-$surface_variant: #44483e;
-$onBackground: #e3e3dc;
+@media (prefers-color-scheme: dark) {
+    // green
+    $primary: #99d85f;
+    $secondary: #becbae;
+    $teritary: #a0cfcd;
+    $on_primary_container : #b4f578;
+    $background: #1b1c18;
+    $surface_variant: #44483e;
+    $onBackground: #e3e3dc;
 
+    * {
+        margin: 2%;
+        color: $onBackground;
+        background-color: $background;
+        font-family: "JetBrains Mono";
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $primary;
+    }
+
+    a {
+        color: $secondary;
+    }
+
+    hr {
+        border-color: $surface_variant ;
+    }
+
+}
 
 @media (prefers-color-scheme: light) {
     // green
@@ -17,33 +43,34 @@ $onBackground: #e3e3dc;
     $background: #fdfcf5;
     $surface_variant: #e0e4d6;
     $onBackground: #1b1c18;
+
+    * {
+        margin: 2%;
+        color: $onBackground;
+        background-color: $background;
+        font-family: "JetBrains Mono";
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $primary;
+    }
+
+    a {
+        color: $secondary;
+    }
+
+    hr {
+        border-color: $surface_variant ;
+    }
+
+
 }
 
-
-
-* {
-    margin: 2%;
-    color: $onBackground;
-    background-color: $background;
-    font-family: "JetBrains Mono";
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: $primary;
-}
-
-a {
-    color: $secondary;
-}
-
-hr {
-    border-color: $surface_variant ;
-}
 
 
 // purple

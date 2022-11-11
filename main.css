@@ -1,25 +1,44 @@
-* {
-  margin: 2%;
-  color: #e3e3dc;
-  background-color: #1b1c18;
-  font-family: "JetBrains Mono";
-}
-
-h1,
+@media (prefers-color-scheme: dark) {
+  * {
+    margin: 2%;
+    color: #e3e3dc;
+    background-color: #1b1c18;
+    font-family: "JetBrains Mono";
+  }
+  h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #99d85f;
+    color: #99d85f;
+  }
+  a {
+    color: #becbae;
+  }
+  hr {
+    border-color: #44483e;
+  }
 }
-
-a {
-  color: #becbae;
-}
-
-hr {
-  border-color: #44483e;
-}
-
-/*# sourceMappingURL=main.css.map */
+@media (prefers-color-scheme: light) {
+  * {
+    margin: 2%;
+    color: #1b1c18;
+    background-color: #fdfcf5;
+    font-family: "JetBrains Mono";
+  }
+  h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #396a00;
+  }
+  a {
+    color: #57624a;
+  }
+  hr {
+    border-color: #e0e4d6;
+  }
+}/*# sourceMappingURL=main.css.map */
