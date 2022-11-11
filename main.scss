@@ -1,11 +1,50 @@
 // green
 $primary: #99d85f;
-$secondary:#becbae;
-$teritary:#a0cfcd;
-$on_primary_container :#b4f578;
-$background:#1b1c18;
-$surface_variant:#44483e;
-$text:#e3e3dc;
+$secondary: #becbae;
+$teritary: #a0cfcd;
+$on_primary_container : #b4f578;
+$background: #1b1c18;
+$surface_variant: #44483e;
+$onBackground: #e3e3dc;
+
+
+@media (prefers-color-scheme: light) {
+    // green
+    $primary: #396a00;
+    $secondary: #57624a;
+    $teritary: #386664;
+    $on_primary_container : #0d2000;
+    $background: #fdfcf5;
+    $surface_variant: #e0e4d6;
+    $onBackground: #1b1c18;
+}
+
+
+
+* {
+    margin: 2%;
+    color: $onBackground;
+    background-color: $background;
+    font-family: "JetBrains Mono";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $primary;
+}
+
+a {
+    color: $secondary;
+}
+
+hr {
+    border-color: $surface_variant ;
+}
+
 
 // purple
 // $primary: #e9b3ff;
@@ -14,20 +53,3 @@ $text:#e3e3dc;
 // $background:#1e1b1e;
 // $surface_variant:#4c444d;
 // $text:#e8e0e5;
-* {
-    margin: 2%;
-    color: $text;
-    background-color: $background;
-    font-family: "JetBrains Mono";
-}
-
-h1,h2,h3,h4,h5,h6 {
-    color: $primary;    
-}
-
-a {
-    color: $secondary;
-}
-hr {
-    border-color: $surface_variant ;
-}
