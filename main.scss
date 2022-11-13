@@ -32,8 +32,8 @@
     $surface_variant: #3f4947;
 
     * {
-        margin: 2%;
         color: $onBackground;
+        margin: 2%;
         background-color: $background;
         font-family: "JetBrains Mono";
     }
@@ -110,12 +110,10 @@
 
 }
 
-
-
-// purple
-// $primary: #e9b3ff;
-// $secondary:#d4c0d8;
-// $on_primary_container :#6e1a95;
-// $background:#1e1b1e;
-// $surface_variant:#4c444d;
-// $text:#e8e0e5;
+br{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+div{
+    margin: 0;
+}

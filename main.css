@@ -1,7 +1,7 @@
 @media (prefers-color-scheme: dark) {
   * {
-    margin: 2%;
     color: #e0e3e1;
+    margin: 2%;
     background-color: #191c1b;
     font-family: "JetBrains Mono";
   }
@@ -41,4 +41,12 @@ h6 {
   hr {
     border-color: #dae5e2;
   }
+}
+br {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+div {
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
