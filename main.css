@@ -1,8 +1,8 @@
 @media (prefers-color-scheme: dark) {
   * {
     margin: 2%;
-    color: #e3e3dc;
-    background-color: #1b1c18;
+    color: #e0e3e1;
+    background-color: #191c1b;
     font-family: "JetBrains Mono";
   }
   h1,
@@ -11,20 +11,20 @@ h3,
 h4,
 h5,
 h6 {
-    color: #99d85f;
+    color: #53dbca;
   }
   a {
-    color: #becbae;
+    color: #b1ccc7;
   }
   hr {
-    border-color: #44483e;
+    border-color: #3f4947;
   }
 }
 @media (prefers-color-scheme: light) {
   * {
     margin: 2%;
-    color: #1b1c18;
-    background-color: #fdfcf5;
+    color: #191c1b;
+    background-color: #fafdfb;
     font-family: "JetBrains Mono";
   }
   h1,
@@ -33,12 +33,12 @@ h3,
 h4,
 h5,
 h6 {
-    color: #396a00;
+    color: #006a61;
   }
   a {
-    color: #57624a;
+    color: #4a635f;
   }
   hr {
-    border-color: #e0e4d6;
+    border-color: #dae5e2;
   }
 }/*# sourceMappingURL=main.css.map */

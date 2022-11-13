@@ -1,12 +1,35 @@
 @media (prefers-color-scheme: dark) {
-    // green
-    $primary: #99d85f;
-    $secondary: #becbae;
-    $teritary: #a0cfcd;
-    $on_primary_container : #b4f578;
-    $background: #1b1c18;
-    $surface_variant: #44483e;
-    $onBackground: #e3e3dc;
+    // // green
+    // $primary: #99d85f;
+    // $secondary: #becbae;
+    // $teritary: #a0cfcd;
+    // $on_primary_container : #b4f578;
+    // $background: #1b1c18;
+    // $surface_variant: #44483e;
+    // $onBackground: #e3e3dc;
+    // pink
+    // $primary: #ffb1c8;
+    // $secondary: #e3bdc6;
+    // $teritary: #efbd94;
+    // $on_primary_container : #ffd9e2;
+    // $background: #201a1b;
+    // $surface_variant: #514347;
+    // $onBackground: #ebe0e1;
+    // // red
+    // $primary: #ffb3ad;
+    // $secondary: #e7bdb9;
+    // $teritary: #e1c28c;
+    // $background:#201a19 ;
+    // $onBackground: #ede0de;
+    // $surface_variant: #534342;
+
+    // blue
+    $primary: #53dbca;
+    $secondary: #b1ccc7;
+    $teritary: #adcae6;
+    $background: #191c1b;
+    $onBackground: #e0e3e1;
+    $surface_variant: #3f4947;
 
     * {
         margin: 2%;
@@ -36,13 +59,29 @@
 
 @media (prefers-color-scheme: light) {
     // green
-    $primary: #396a00;
-    $secondary: #57624a;
-    $teritary: #386664;
-    $on_primary_container : #0d2000;
-    $background: #fdfcf5;
-    $surface_variant: #e0e4d6;
-    $onBackground: #1b1c18;
+    // $primary: #396a00;
+    // $secondary: #57624a;
+    // $teritary: #386664;
+    // $on_primary_container : #0d2000;
+    // $background: #fdfcf5;
+    // $surface_variant: #e0e4d6;
+    // $onBackground: #1b1c18;
+    // // red
+    // $primary: #b81e23;
+    // $secondary: #775653;
+    // $teritary: #725b2e;
+    // $on_primary_container : #410003;
+    // $background: #fffbff;
+    // $surface_variant: #f5dddb;
+    // $onBackground: #201a19;
+
+    // blue #00554d
+    $primary: #006a61;
+    $secondary: #4a635f;
+    $teritary: #46617a;
+    $background: #fafdfb;
+    $onBackground: #191c1b;
+    $surface_variant: #dae5e2;
 
     * {
         margin: 2%;
