@@ -1,0 +1,69 @@
+#!/bin/bash
+username=$1
+
+# if var username is empty
+if [ -z "$username" ]; then
+    # user = root
+    if [ "$EUID" -eq 0 ];then
+        read -p "Enter username: " username
+        # chek if user exists and create if not
+        if id -u "$username" >/dev/null 2>&1; then
+            echo "User $username exists"
+        else
+            echo "User $username does not exist"
+            read -p "Create user $username? [y/n]: " create
+            if [ "$create" = "y" ]; then
+                adduser "$username"
+            else
+                echo "Exiting..."
+                exit 1
+            fi
+        fi
+    else
+        # chek if user is sudoer
+        if sudo -n true 2>/dev/null; then
+            echo "User is sudoer"
+        else
+            echo "User is not sudoer"
+            exit 1
+        fi
+        username=$USER
+    fi
+fi
+# restart as sudo
+if [ "$EUID" -ne 0 ];
+then
+    echo "Restarting as sudo..."
+    sudo "$0" $username
+    exit $?
+fi
+
+# run part of script as user
+apt update -y 
+apt upgrade -y 
+# basic packages
+apt install -y fish neofetch nvtop tree htop vim neovim python3 pip nodejs gh docker.io npm 
+# flutter 
+apt install -y clang cmake ninja-build pkg-config
+# nvidia w/cuda for tensorflow
+apt install -y nvidia-cudnn nvidia-cuda-toolkit
+pip install glances[all]
+# change shell to fish
+chsh -s /usr/bin/fish $username && chsh -s /usr/bin/fish  
+# todo get group pid of docker from file
+usermod -aG sudo $username && groupmod -g 961 docker
+
+# if parameters include --test print message
+if [[ "$@" == *"--official-extensions-repo"* ]]; then
+    echo "Using official extensions repo"
+    sed -i '$ d' /app/code-server/lib/vscode/product.json
+    echo ',
+        "extensionsGallery": {
+            "serviceUrl": "https://marketplace.visualstudio.com/_apis/public/gallery",
+            "cacheUrl": "https://vscode.blob.core.windows.net/gallery/index",
+            "itemUrl": "https://marketplace.visualstudio.com/items"
+        } 
+    }' >> /app/code-server/lib/vscode/product.json
+else 
+    echo "Using open-vsx extensions repo"
+fi
