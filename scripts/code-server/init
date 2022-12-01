@@ -50,10 +50,10 @@ apt install -y nvidia-cudnn nvidia-cuda-toolkit
 pip install glances[all]
 # change shell to fish
 chsh -s /usr/bin/fish $username && chsh -s /usr/bin/fish  
-# todo get group pid of docker from file
+# TODO get group pid of docker from file
 usermod -aG sudo $username && groupmod -g 961 docker
 
-# if parameters include --test print message
+# if parameters include --official-extensions-repo print message
 if [[ "$@" == *"--official-extensions-repo"* ]]; then
     echo "Using official extensions repo"
     sed -i '$ d' /app/code-server/lib/vscode/product.json
